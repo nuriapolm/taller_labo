@@ -1,0 +1,71 @@
+\section{Exercici 2}
+Siguin $z_1, z_2$ les arrels del polinomi
+\[
+x^2 + ax + b = 0, \quad a,b \in \mathbb{R}.
+\]
+
+Com que els coeficients són reals, si les arrels no són reals, són conjugades:
+\[
+z_2 = \overline{z_1}.
+\]
+
+Per a qualsevol enter positiu $n$:
+\[
+z_1^n + z_2^n = z_1^n + \overline{z_1}^n.
+\]
+
+Com que
+\[
+\overline{z_1^n} = \overline{z_1}^n,
+\]
+tenim:
+\[
+z_1^n + z_2^n = z_1^n + \overline{z_1^n} = 2 \,\mathrm{Re}(z_1^n).
+\]
+
+Per tant,
+\[
+z_1^n + z_2^n \in \mathbb{R}.
+\]
+
+Resolem el cas concret $x^2 - 2x + 2 = 0$:
+\[
+x = \frac{2 \pm \sqrt{4 - 8}}{2} = \frac{2 \pm \sqrt{-4}}{2} = 1 \pm i.
+\]
+
+Així,
+\[
+z_1 = 1+i, \quad z_2 = 1-i.
+\]
+
+Forma polar:
+\[
+|z_1| = \sqrt{1^2 + 1^2} = \sqrt{2}, \quad \arg(z_1) = \frac{\pi}{4}.
+\]
+
+\[
+z_1 = \sqrt{2}\left(\cos \frac{\pi}{4} + i \sin \frac{\pi}{4}\right),
+\]
+\[
+z_2 = \sqrt{2}\left(\cos \frac{\pi}{4} - i \sin \frac{\pi}{4}\right).
+\]
+
+Potències:
+\[
+z_1^n = (\sqrt{2})^n \left(\cos \frac{n\pi}{4} + i \sin \frac{n\pi}{4}\right),
+\]
+\[
+z_2^n = (\sqrt{2})^n \left(\cos \frac{n\pi}{4} - i \sin \frac{n\pi}{4}\right).
+\]
+
+Sumant:
+\[
+z_1^n + z_2^n = 2(\sqrt{2})^n \cos\left(\frac{n\pi}{4}\right).
+\]
+
+Resultat final:
+\[
+\boxed{
+z_1^n + z_2^n = 2(\sqrt{2})^n \cos\left(\frac{n\pi}{4}\right)
+}
+\]
